@@ -1,5 +1,5 @@
 def first_word(text: str) -> str:
-    for char in ",.":
+    for char in " ,.":
         text = text.replace(char, " ")
         words = text.split()
     return words[0] if words else ''
