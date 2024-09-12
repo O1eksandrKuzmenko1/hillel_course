@@ -8,7 +8,7 @@ class Counter:
         if not (self.min_value <= self.current <= self.max_value):
             raise ValueError(f"Початкове значення повинно бути між {self.min_value} і {self.max_value}")
 
-    def set_current(self, start):
+    def set_current(self, start: int):
         if self.min_value <= start <= self.max_value:
             self.current = start
         else:
@@ -19,7 +19,7 @@ class Counter:
         if self.current > self.max_value:
             self.current = self.max_value
 
-    def set_min(self, min_min):
+    def set_min(self, min_min: int):
         self.min_value = min_min
         if self.current < self.min_value:
             self.current = self.min_value
