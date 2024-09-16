@@ -1,4 +1,7 @@
-def generate_cube_numbers(end: int) -> list[int]:
+from typing import Generator
+
+
+def generate_cube_numbers(end: int) -> Generator[int]:
     number = 2
     while True:
         cube = number ** 3
